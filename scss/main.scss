@@ -1,0 +1,6 @@
+@use 'base';
+@use 'components';
+
+body {
+    background-color: base.$background;
+}
