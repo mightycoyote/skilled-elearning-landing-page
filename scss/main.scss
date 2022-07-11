@@ -2,5 +2,29 @@
 @use 'components';
 
 body {
-    background-color: base.$background;
+    background-color: white;
+}
+
+main {
+    background: base.$bg-gradient;
+}
+
+header {
+    padding: 1rem;
+}
+
+footer {
+    background-color: base.$nearblack;
+}
+
+.wrapper {
+    max-width: base.$max-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.topline,
+.bottomline {
+    display: flex;
+    justify-content: space-between;
 }

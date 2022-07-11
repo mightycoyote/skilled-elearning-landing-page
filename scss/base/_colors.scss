@@ -1,1 +1,12 @@
-$background: #F2F2F2;
+$bg-gradient: linear-gradient(white, #F0F1FF);
+
+$steelblue: #666CA3;
+$nearblack: #13183F;
+$gray: #83869A;
+$darkpink: #F74780;
+$lightpink: #FFA7C3;
+
+// increase lightness on these for hover states.
+// on design document they added another 50% white layer, which may not translate exactly
+$gradient1: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+$gradient2: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));

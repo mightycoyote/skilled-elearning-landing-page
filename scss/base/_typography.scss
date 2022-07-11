@@ -1,0 +1,74 @@
+@use './breakpoints';
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@mixin heading-xl {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+@mixin heading-l {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+@mixin heading-m {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+@mixin heading-s {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@mixin body-m {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+@mixin body-s {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+h1 {
+    @include heading-l;
+
+    @media (min-width: breakpoints.$lg) {
+        @include heading-xl;
+    }
+}
+
+h2 {
+    @include heading-s;
+
+    @media (min-width: breakpoints.$lg) {
+        @include heading-m;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 800;
+
+    @media (min-width: breakpoints.$lg) {
+        @include heading-s;
+    }
+}
+
+// p {
+//     @include body-s;
+
+// }
+
+.get-started {
+    font-size: 18px;
+    font-weight: 700;
+}

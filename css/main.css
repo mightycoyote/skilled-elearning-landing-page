@@ -54,7 +54,74 @@ h6 {
 }
 
 body {
-  background-color: #F2F2F2;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+@media (min-width: 1400px) {
+  h3 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+.get-started {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  background: linear-gradient(white, #F0F1FF);
+}
+
+header {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #13183F;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.topline,
+.bottomline {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
