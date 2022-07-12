@@ -1,0 +1,24 @@
+@use '../base';
+
+.button {
+    border-radius: 28px;
+    color: white;
+    line-height: 56px;
+    padding: 0 30px;
+}
+
+.nearblack {
+    background-color: base.$nearblack;
+
+    &:hover {
+        background-color: base.$nearblack-hover;
+    }
+}
+
+.gradient1 {
+    background: base.$gradient1;
+}
+
+.gradient2 {
+    background: base.$gradient2;
+}

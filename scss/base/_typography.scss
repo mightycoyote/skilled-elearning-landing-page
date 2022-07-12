@@ -1,4 +1,5 @@
 @use './breakpoints';
+@use './colors';
 
 
 body {
@@ -32,10 +33,11 @@ body {
     line-height: 28px;
 }
 
+// this is as used in the design, not as given in the "design system" 
 @mixin body-s {
     font-size: 16px;
-    font-weight: 700;
-    line-height: 28px;
+    font-weight: 500;
+    line-height: 26px;
 }
 
 h1 {
@@ -63,10 +65,14 @@ h3 {
     }
 }
 
-// p {
-//     @include body-s;
+p {
+    color: colors.$gray;
+    @include body-s;
 
-// }
+    @media (min-width: breakpoints.$lg) {
+        @include body-m;
+    }
+}
 
 .get-started {
     font-size: 18px;

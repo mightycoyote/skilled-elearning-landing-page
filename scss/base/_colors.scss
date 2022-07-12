@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $bg-gradient: linear-gradient(white, #F0F1FF);
 
 $steelblue: #666CA3;
@@ -6,7 +8,21 @@ $gray: #83869A;
 $darkpink: #F74780;
 $lightpink: #FFA7C3;
 
+$gradient-a: #F02AA6;
+$gradient-b: #FF6F48;
+$gradient-c: #4851FF;
+
 // increase lightness on these for hover states.
 // on design document they added another 50% white layer, which may not translate exactly
-$gradient1: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
-$gradient2: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+
+$gradient-a-lighter: color.scale($gradient-a, $lightness: 50%);
+$gradient-b-lighter: color.scale($gradient-b, $lightness: 50%);
+$gradient-c-lighter: color.scale($gradient-c, $lightness: 50%);
+
+
+$gradient1: linear-gradient($gradient-a, $gradient-b);
+$gradient2: linear-gradient($gradient-c, $gradient-a);
+
+$nearblack-hover: color.scale($nearblack, $lightness: 50%);
+$gradient1-hover: linear-gradient($gradient-a-lighter, $gradient-b-lighter);
+$gradient2-hover: linear-gradient($gradient-c-lighter, $gradient-a-lighter);

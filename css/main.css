@@ -61,7 +61,7 @@ h1 {
   font-size: 40px;
   font-weight: 800;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   h1 {
     font-size: 56px;
     font-weight: 800;
@@ -72,7 +72,7 @@ h2 {
   font-size: 24px;
   font-weight: 800;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   h2 {
     font-size: 32px;
     font-weight: 800;
@@ -84,16 +84,52 @@ h3 {
   font-size: 20px;
   font-weight: 800;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   h3 {
     font-size: 24px;
     font-weight: 800;
   }
 }
 
+p {
+  color: #83869A;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+@media (min-width: 1440px) {
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+
 .get-started {
   font-size: 18px;
   font-weight: 700;
+}
+
+.button {
+  border-radius: 28px;
+  color: white;
+  line-height: 56px;
+  padding: 0 30px;
+}
+
+.nearblack {
+  background-color: #13183F;
+}
+.nearblack:hover {
+  background-color: #5b68cd;
+}
+
+.gradient1 {
+  background: linear-gradient(#F02AA6, #FF6F48);
+}
+
+.gradient2 {
+  background: linear-gradient(#4851FF, #F02AA6);
 }
 
 body {
@@ -105,23 +141,34 @@ main {
 }
 
 header {
-  padding: 1rem;
+  padding: 10px;
 }
 
 footer {
   background-color: #13183F;
 }
 
-.wrapper {
+.wrapper,
+.hero {
   max-width: 1110px;
   margin: 0 auto;
   padding: 10px;
+}
+.wrapper .button,
+.hero .button {
+  width: max-content;
 }
 
 .topline,
 .bottomline {
   display: flex;
   justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.logo {
+  height: 28px;
 }
 
 /*# sourceMappingURL=main.css.map */

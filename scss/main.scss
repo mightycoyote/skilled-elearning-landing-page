@@ -10,21 +10,32 @@ main {
 }
 
 header {
-    padding: 1rem;
+    padding: 10px;
 }
 
 footer {
     background-color: base.$nearblack;
 }
 
-.wrapper {
+.wrapper,
+.hero {
     max-width: base.$max-content;
     margin: 0 auto;
     padding: 10px;
+
+    .button {
+        width: max-content;
+    }
 }
 
 .topline,
 .bottomline {
     display: flex;
     justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+
+.logo {
+    height: 28px;
 }

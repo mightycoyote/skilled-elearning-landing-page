@@ -20,15 +20,37 @@
   <header>
     <div class="topline wrapper">
       <img class="logo" src="./assets/logo-dark.svg">
-      <div class="get-started button">Get Started</div>
+      <div class="get-started button nearblack">Get Started</div>
     </div>
 
-    <h1>Maximize skill, minimize budget</h1>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Maximize skill, minimize budget</h1>
+        <p>Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.</p>
+        <div class="get-started button gradient1">Get Started</div>
+      </div>
 
-    <p>Our modern courses across a range of in-demand skills will give you the
-      knowledge you need to live the life you want.</p>
+      <div class="hero-image">
+        <picture>
+          <!-- may need to revisit sizes -->
+          <source media="(min-width: 1440px)" srcset="assets/image-hero-desktop.webp 1046w,
+                          assets/image-hero-desktop.png 1046w,
+                          assets/image-hero-desktop@2x.webp 2092w,
+                          assets/image-hero-desktop@2x.png 2092w" sizes="992px">
+          <source media="(min-width: 768px)" srcset="assets/image-hero-tablet.webp 695w,
+                          assets/image-hero-tablet.png 695w,
+                          assets/image-hero-tablet@2x.webp 1390w,
+                          assets/image-hero-tablet@2x.png 1390w" sizes="640px">
+          <source srcset="assets/image-hero-mobile.webp 435w, 
+                          assets/image-hero-mobile.png 435w,
+                          assets/image-hero-mobile@2x.webp 870w,
+                          assets/image-hero-mobile@2x.png 870w" sizes="253px">
+          <img src="assets/image-hero-mobile.png" alt="">
+        </picture>
+      </div>
+    </div>
 
-    <div class="get-started button">Get Started</div>
   </header>
 
   <main>
@@ -72,7 +94,7 @@
   <footer>
     <div class="bottomline wrapper">
       <img class="logo" src="./assets/logo-light.svg">
-      <div class="get-started button">Get Started</div>
+      <div class="get-started button gradient2">Get Started</div>
     </div>
   </footer>
 
