@@ -11,14 +11,22 @@
     background-color: base.$nearblack;
 
     &:hover {
-        background-color: base.$nearblack-hover;
+        background-color: base.$steelblue;
     }
 }
 
 .gradient1 {
     background: base.$gradient1;
+
+    &:hover {
+        background: base.$gradient1-hover;
+    }
 }
 
 .gradient2 {
     background: base.$gradient2;
+
+    &:hover {
+        background: base.$gradient2-hover;
+    }
 }

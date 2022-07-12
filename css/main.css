@@ -121,15 +121,21 @@ p {
   background-color: #13183F;
 }
 .nearblack:hover {
-  background-color: #5b68cd;
+  background-color: #666CA3;
 }
 
 .gradient1 {
   background: linear-gradient(#F02AA6, #FF6F48);
 }
+.gradient1:hover {
+  background: linear-gradient(#f895d3, #ffb7a4);
+}
 
 .gradient2 {
   background: linear-gradient(#4851FF, #F02AA6);
+}
+.gradient2:hover {
+  background: linear-gradient(#a4a8ff, #f895d3);
 }
 
 body {
