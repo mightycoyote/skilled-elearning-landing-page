@@ -39,3 +39,18 @@ footer {
 .logo {
     height: 28px;
 }
+
+@media (min-width: 768px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 50% 70%;
+        grid-template-rows: 500px;
+        align-items: center;
+    }
+
+    .hero-image {
+        position: relative;
+        bottom: 50px;
+        left: 90px;
+    }
+}
