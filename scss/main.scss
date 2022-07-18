@@ -9,10 +9,6 @@ main {
     background: base.$bg-gradient;
 }
 
-header {
-    padding: 10px;
-}
-
 footer {
     background-color: base.$nearblack;
 }
@@ -21,30 +17,38 @@ footer {
 .hero {
     max-width: base.$max-content;
     margin: 0 auto;
-    padding: 10px;
+    padding: 16px;
 
     .button {
         width: max-content;
     }
 }
 
+.flow-space>*+* {
+    margin-top: 1rem;
+}
+
 .topline,
 .bottomline {
     display: flex;
     justify-content: space-between;
-    height: 120px;
+    height: 7.5rem;
     align-items: center;
 }
 
 .logo {
-    height: 28px;
+    height: 1.75rem;
+}
+
+#hero {
+    object-fit: none;
 }
 
 @media (min-width: 768px) {
     .hero {
         display: grid;
         grid-template-columns: 50% 70%;
-        grid-template-rows: 500px;
+        grid-template-rows: 31rem;
         align-items: center;
     }
 
