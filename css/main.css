@@ -142,6 +142,44 @@ p {
   background: linear-gradient(#a4a8ff, #f895d3);
 }
 
+.cards {
+  display: grid;
+  gap: 5px;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+}
+.card > * + * {
+  margin-top: 1rem;
+}
+.card .get-started {
+  color: #F74780;
+}
+
+.hero-text > * + * {
+  margin-top: 1rem;
+}
+
+#hero {
+  object-fit: none;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 50% 70%;
+    grid-template-rows: 31rem;
+    align-items: center;
+  }
+
+  .hero-image {
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+  }
+}
 body {
   background-color: white;
 }
@@ -165,10 +203,6 @@ footer {
   width: max-content;
 }
 
-.flow-space > * + * {
-  margin-top: 1rem;
-}
-
 .topline,
 .bottomline {
   display: flex;
@@ -179,25 +213,6 @@ footer {
 
 .logo {
   height: 1.75rem;
-}
-
-#hero {
-  object-fit: none;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    display: grid;
-    grid-template-columns: 50% 70%;
-    grid-template-rows: 31rem;
-    align-items: center;
-  }
-
-  .hero-image {
-    position: relative;
-    bottom: 50px;
-    left: 90px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

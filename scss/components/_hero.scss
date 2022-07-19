@@ -1,0 +1,24 @@
+@use '../base';
+
+.hero-text {
+    @include base.flow-space;
+}
+
+#hero {
+    object-fit: none;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 50% 70%;
+        grid-template-rows: 31rem;
+        align-items: center;
+    }
+
+    .hero-image {
+        position: relative;
+        bottom: 50px;
+        left: 90px;
+    }
+}

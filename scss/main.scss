@@ -24,10 +24,6 @@ footer {
     }
 }
 
-.flow-space>*+* {
-    margin-top: 1rem;
-}
-
 .topline,
 .bottomline {
     display: flex;
@@ -38,23 +34,4 @@ footer {
 
 .logo {
     height: 1.75rem;
-}
-
-#hero {
-    object-fit: none;
-}
-
-@media (min-width: 768px) {
-    .hero {
-        display: grid;
-        grid-template-columns: 50% 70%;
-        grid-template-rows: 31rem;
-        align-items: center;
-    }
-
-    .hero-image {
-        position: relative;
-        bottom: 50px;
-        left: 90px;
-    }
 }

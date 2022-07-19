@@ -1,0 +1,17 @@
+@use '../base';
+
+
+.cards {
+    display: grid;
+    gap: 5px;
+}
+
+.card {
+    @include base.flow-space;
+    background-color: white;
+    padding: 1rem;
+
+    & .get-started {
+        color: base.$darkpink;
+    }
+}
