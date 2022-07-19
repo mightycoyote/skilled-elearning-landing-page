@@ -149,6 +149,7 @@ p {
 
 .card {
   background-color: white;
+  border-radius: 10px;
   padding: 1rem;
 }
 .card > * + * {
@@ -156,6 +157,10 @@ p {
 }
 .card .get-started {
   color: #F74780;
+}
+.card :first-child {
+  background: linear-gradient(#F02AA6, #FF6F48);
+  color: white;
 }
 
 .hero-text > * + * {
