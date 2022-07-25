@@ -7,10 +7,15 @@ body {
 
 main {
     background: base.$bg-gradient;
+    padding-bottom: 5rem;
 }
 
 footer {
     background-color: base.$nearblack;
+}
+
+h1 {
+    margin-top: 1.5rem;
 }
 
 .wrapper,
@@ -20,7 +25,7 @@ footer {
     padding: 0 16px;
 
     .button {
-        width: max-content;
+        width: 8.75rem;
     }
 }
 
@@ -28,8 +33,15 @@ footer {
 .bottomline {
     display: flex;
     justify-content: space-between;
-    height: 7.5rem;
     align-items: center;
+}
+
+.topline {
+    height: 5rem;
+}
+
+.bottomline {
+    height: 8rem;
 }
 
 .logo {

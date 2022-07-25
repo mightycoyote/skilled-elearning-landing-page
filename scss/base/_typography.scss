@@ -6,6 +6,11 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+h1,
+h3 {
+    color: colors.$nearblack;
+}
+
 @mixin heading-xl {
     font-size: 3.5rem;
     font-weight: 800;
