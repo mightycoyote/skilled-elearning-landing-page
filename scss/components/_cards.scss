@@ -2,7 +2,13 @@
 
 .cards {
     display: grid;
-    gap: 44px;
+    gap: 44px 5px;
+    grid-template-columns: repeat(auto-fill, minmax(322px, 20.125rem));
+    justify-content: space-around;
+
+    @media (min-width: base.$max-content) {
+        justify-content: space-between;
+    }
 }
 
 .card {
@@ -12,6 +18,7 @@
     background-color: white;
     border-radius: 10px;
     padding: 24px;
+    margin: auto;
 
     & h3 {
         align-self: end;
@@ -26,14 +33,26 @@
     &:first-child {
         background: base.$gradient1;
         color: white;
+
+        @media (min-width: 620px) {
+            height: 16.25rem;
+        }
+
+        @media (min-width: base.$med) {
+            height: 20.125rem;
+        }
     }
 
     &+.card {
         grid-template-rows: 0px repeat(3, auto);
         height: 16.25rem;
-    }
 
-    .icon {
-        margin-bottom: 40px;
+        @media (min-width: base.$med) {
+            height: 20.125rem;
+        }
     }
+}
+
+.icon {
+    margin-bottom: 40px;
 }

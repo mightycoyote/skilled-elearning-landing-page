@@ -151,7 +151,14 @@ p {
 
 .cards {
   display: grid;
-  gap: 44px;
+  gap: 44px 5px;
+  grid-template-columns: repeat(auto-fill, minmax(322px, 20.125rem));
+  justify-content: space-around;
+}
+@media (min-width: 1110px) {
+  .cards {
+    justify-content: space-between;
+  }
 }
 
 .card {
@@ -161,6 +168,7 @@ p {
   background-color: white;
   border-radius: 10px;
   padding: 24px;
+  margin: auto;
 }
 .card h3 {
   align-self: end;
@@ -174,11 +182,27 @@ p {
   background: linear-gradient(#F02AA6, #FF6F48);
   color: white;
 }
+@media (min-width: 620px) {
+  .card:first-child {
+    height: 16.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .card:first-child {
+    height: 20.125rem;
+  }
+}
 .card + .card {
   grid-template-rows: 0px repeat(3, auto);
   height: 16.25rem;
 }
-.card .icon {
+@media (min-width: 768px) {
+  .card + .card {
+    height: 20.125rem;
+  }
+}
+
+.icon {
   margin-bottom: 40px;
 }
 
@@ -234,6 +258,12 @@ h1 {
 .wrapper .button,
 .hero .button {
   width: 8.75rem;
+}
+@media (min-width: 450px) {
+  .wrapper,
+.hero {
+    padding: 0 20px;
+  }
 }
 
 .topline,
