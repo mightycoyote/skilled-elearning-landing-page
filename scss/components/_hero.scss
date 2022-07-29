@@ -12,17 +12,40 @@
     object-fit: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: base.$med) {
     .hero {
         display: grid;
-        grid-template-columns: 50% 70%;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 31rem;
         align-items: center;
+        margin-bottom: 1rem;
     }
 
     .hero-image {
         position: relative;
-        bottom: 50px;
-        left: 90px;
+        bottom: 70px;
+        padding-top: 0;
+        z-index: -1;
+    }
+
+    #hero {
+        object-fit: cover;
+        max-width: 640px;
+    }
+}
+
+@media (min-width: base.$max-content) {
+    .hero {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 37rem;
+    }
+
+    .hero-image {
+        bottom: 100px;
+        left: 50px;
+    }
+
+    #hero {
+        max-width: 990px;
     }
 }
