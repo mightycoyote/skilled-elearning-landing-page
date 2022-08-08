@@ -1,0 +1,25 @@
+@use '../base';
+
+body {
+    background-color: white;
+}
+
+main {
+    background: base.$bg-gradient;
+    padding-bottom: 5rem;
+}
+
+.wrapper,
+.hero {
+    max-width: base.$max-content;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    .button {
+        width: 8.75rem;
+    }
+
+    @media (min-width: 450px) {
+        padding: 0 40px;
+    }
+}
