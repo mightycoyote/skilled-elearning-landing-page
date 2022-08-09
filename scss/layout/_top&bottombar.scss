@@ -9,6 +9,10 @@
 
 .topline {
     height: 5rem;
+
+    @media (min-width: base.$med) {
+        padding-top: 2rem;
+    }
 }
 
 .bottomline {

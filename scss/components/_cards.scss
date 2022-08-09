@@ -1,7 +1,6 @@
 @use '../base';
 
 .cards {
-
     @media (min-width: base.$med) {
         display: grid;
         gap: 44px 20px;
@@ -10,13 +9,16 @@
 
     @media (min-width: base.$max-content) {
         justify-content: space-between;
+        gap: 76px 20px;
     }
+
+    background-color: orange;
 }
 
 .card {
     display: grid;
     gap: 24px;
-    align-items: center;
+    align-items: start;
     background-color: white;
     border-radius: 10px;
     padding: 24px;
@@ -28,7 +30,7 @@
 
     & .get-started {
         color: base.$darkpink;
-        align-self: start;
+        place-self: start;
         margin-bottom: .5rem;
     }
 
@@ -37,21 +39,19 @@
         color: white;
         margin-top: 0;
 
-        @media (min-width: 620px) {
-            height: 16.25rem;
-        }
-
         @media (min-width: base.$med) {
             height: 20.125rem;
             margin-top: auto;
+            padding-top: 60px;
         }
     }
 
     &+.card {
-        grid-template-rows: 0px repeat(3, auto);
+        // grid-template-rows: 0px 42px 110px 42px;
         height: 16.25rem;
 
         @media (min-width: base.$med) {
+            grid-template-rows: 0px 2.625rem 6.875rem 2.625rem;
             height: 20.125rem;
             margin-top: auto;
         }
@@ -60,4 +60,5 @@
 
 .icon {
     margin-bottom: 40px;
+    align-self: center;
 }

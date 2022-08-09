@@ -149,6 +149,9 @@ p {
   background: linear-gradient(#a4a8ff, #f895d3);
 }
 
+.cards {
+  background-color: orange;
+}
 @media (min-width: 768px) {
   .cards {
     display: grid;
@@ -159,13 +162,14 @@ p {
 @media (min-width: 1110px) {
   .cards {
     justify-content: space-between;
+    gap: 76px 20px;
   }
 }
 
 .card {
   display: grid;
   gap: 24px;
-  align-items: center;
+  align-items: start;
   background-color: white;
   border-radius: 10px;
   padding: 24px;
@@ -176,7 +180,7 @@ p {
 }
 .card .get-started {
   color: #F74780;
-  align-self: start;
+  place-self: start;
   margin-bottom: 0.5rem;
 }
 .card:first-child {
@@ -184,23 +188,19 @@ p {
   color: white;
   margin-top: 0;
 }
-@media (min-width: 620px) {
-  .card:first-child {
-    height: 16.25rem;
-  }
-}
 @media (min-width: 768px) {
   .card:first-child {
     height: 20.125rem;
     margin-top: auto;
+    padding-top: 60px;
   }
 }
 .card + .card {
-  grid-template-rows: 0px repeat(3, auto);
   height: 16.25rem;
 }
 @media (min-width: 768px) {
   .card + .card {
+    grid-template-rows: 0px 2.625rem 6.875rem 2.625rem;
     height: 20.125rem;
     margin-top: auto;
   }
@@ -208,12 +208,16 @@ p {
 
 .icon {
   margin-bottom: 40px;
+  align-self: center;
 }
 
 h1 {
   margin-top: 1.5rem;
 }
 
+.hero-text {
+  max-width: 40ch;
+}
 .hero-text > * + * {
   margin-top: 1.5rem;
 }
@@ -252,6 +256,9 @@ h1 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 37rem;
   }
+  .hero .button {
+    margin-top: 2.5rem;
+  }
 
   .hero-image {
     bottom: 100px;
@@ -274,7 +281,8 @@ main {
 .wrapper,
 .hero {
   max-width: 1110px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 16px;
 }
 .wrapper .button,
@@ -297,6 +305,11 @@ main {
 
 .topline {
   height: 5rem;
+}
+@media (min-width: 768px) {
+  .topline {
+    padding-top: 2rem;
+  }
 }
 
 .bottomline {
