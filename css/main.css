@@ -149,9 +149,6 @@ p {
   background: linear-gradient(#a4a8ff, #f895d3);
 }
 
-.cards {
-  background-color: orange;
-}
 @media (min-width: 768px) {
   .cards {
     display: grid;
@@ -168,7 +165,7 @@ p {
 
 .card {
   display: grid;
-  gap: 24px;
+  gap: 1.2rem;
   align-items: start;
   background-color: white;
   border-radius: 10px;
@@ -196,6 +193,7 @@ p {
   }
 }
 .card + .card {
+  grid-template-rows: 0px 2.5rem auto 2.5rem;
   height: 16.25rem;
 }
 @media (min-width: 768px) {
@@ -203,6 +201,7 @@ p {
     grid-template-rows: 0px 2.625rem 6.875rem 2.625rem;
     height: 20.125rem;
     margin-top: auto;
+    gap: 1.5rem;
   }
 }
 

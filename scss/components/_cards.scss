@@ -11,13 +11,11 @@
         justify-content: space-between;
         gap: 76px 20px;
     }
-
-    background-color: orange;
 }
 
 .card {
     display: grid;
-    gap: 24px;
+    gap: 1.2rem;
     align-items: start;
     background-color: white;
     border-radius: 10px;
@@ -47,13 +45,14 @@
     }
 
     &+.card {
-        // grid-template-rows: 0px 42px 110px 42px;
+        grid-template-rows: 0px 2.5rem auto 2.5rem;
         height: 16.25rem;
 
         @media (min-width: base.$med) {
             grid-template-rows: 0px 2.625rem 6.875rem 2.625rem;
             height: 20.125rem;
             margin-top: auto;
+            gap: 1.5rem;
         }
     }
 }
