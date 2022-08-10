@@ -3,5 +3,5 @@ export default {
     build: {
         outDir: './docs/'
     },
-    base: 'https://mightycoyote.github.io/skilled-elearning-landing-page/',
+    base: '/skilled-elearning-landing-page/',
   }
