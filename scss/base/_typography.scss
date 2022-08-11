@@ -85,4 +85,8 @@ p {
 .get-started {
     font-size: 1.125rem;
     font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

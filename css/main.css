@@ -118,6 +118,9 @@ p {
   font-size: 1.125rem;
   font-weight: 700;
 }
+.get-started:hover {
+  cursor: pointer;
+}
 
 .button {
   border-radius: 28px;
@@ -126,6 +129,9 @@ p {
   padding: 0 20px;
   font-weight: 700;
   text-align: center;
+}
+.button:hover {
+  cursor: pointer;
 }
 
 .nearblack {
@@ -179,6 +185,9 @@ p {
   color: #F74780;
   place-self: start;
   margin-bottom: 0.5rem;
+}
+.card .get-started:hover {
+  color: #FFA7C3;
 }
 .card:first-child {
   background: linear-gradient(#F02AA6, #FF6F48);

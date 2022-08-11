@@ -30,6 +30,10 @@
         color: base.$darkpink;
         place-self: start;
         margin-bottom: .5rem;
+
+        &:hover {
+            color: base.$lightpink;
+        }
     }
 
     &:first-child {

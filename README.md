@@ -49,8 +49,6 @@ Users should be able to:
 
 This was the first project I had done with an extensive collection of different graphic assets for the hero image at different screen sizes. There were not only differences in resolution, but also some art direction where different versions of the graphic were to be loaded at different breakpoints. This required using not only HTML `srcset`, but `<picture>` as well.
 
-As is frequently the case, the most time-consuming tasks were positioning the graphics -- the hero image that bleeds into the upper right and swaps out at different screen sizes, and the icons that sit on the top edges of the cards.
-
 ### Useful resources
 
 - ["Images on the Web" series - Kevin Powell](https://youtu.be/2QYpkrX2N48) - This 3-part series explains HTML `srcset`, image types (including `.webp`), and `<picture>`.
