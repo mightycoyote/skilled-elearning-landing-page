@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- This solution on Frontend Mentor: [name](https://your-solution-url.com)
+- This solution on Frontend Mentor: [Responsive landing page with SCSS, Vite](https://www.frontendmentor.io/solutions/responsive-landing-page-with-scss-vite-2XkWFZjO_G)
 - Live Site: ['Skilled' elearning landing page](https://mightycoyote.github.io/skilled-elearning-landing-page/)
 
 ## My process
